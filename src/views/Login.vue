@@ -41,7 +41,7 @@
           if(res.data.code==200){//登陆成功
             //把用户名存入vuex存储仓库
             this.$store.commit("setAdminName",this.formData.aname);
-            console.log(this.$store.state.adminName)
+            // console.log(this.$store.state.adminName)
             //执行视图跳转
             this.$router.push("/main");
           }else{
@@ -65,7 +65,7 @@
     margin:150px auto;
     .el-card__header{
       text-align: center;
-      font-size:1.2rem;
+      font-size:1.2 rem;
     } 
   }
 </style>

@@ -20,7 +20,7 @@ export default new Vuex.Store({
       state.adminName=value;
     },
     setGlobalSettings(state,value){
-      state.globalSettings=value
+      state.globalSettings=value;
     }
   }
 })
