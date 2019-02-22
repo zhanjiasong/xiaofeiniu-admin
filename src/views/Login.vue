@@ -17,6 +17,7 @@
             <el-button type="primary" @click="doLogin">登录按钮</el-button>
             <el-button @click="doCancel">取消</el-button>
           </el-form-item>
+
         </el-form>
       </div>
     </el-card>
@@ -36,7 +37,7 @@
     methods: {
       doLogin(){//执行登录
         var url=this.$store.state.globalSettings.apiUrl+`/admin/login/${this.formData.aname}/${this.formData.apwd}`;
-        console.log(url);
+        // console.log(url);
         this.$axios.get(url).then((res)=>{
           if(res.data.code==200){//登陆成功
             //把用户名存入vuex存储仓库

@@ -36,6 +36,7 @@
       doUploadSucc(res,file){
         //res: 服务端返回的响应消息
         console.log(res)
+        console.log(file)
         //file: 从INPUT[type=file] 中读取的第一个上传的文件对象
         //把上传二进制编码转化为DataURL字符串,自动绑定在img里的src属性
         this.imageUrl=URL.createObjectURL(file.raw);
